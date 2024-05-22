@@ -1,1 +1,1 @@
-# ethan-portfolio-starter
+# nardu-nextjs-portfolio
