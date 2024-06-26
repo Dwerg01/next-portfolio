@@ -38,7 +38,7 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Here is a collection of previous projects, commissioned from past and long-standing customers.
+              Here is a collection of previous projects, commissioned by past and long-standing customers.
               Click on a tile to expand and read more
             </motion.p>
           </div>
