@@ -2,48 +2,20 @@
 const workSlider = {
   slides: [
     { promo : "these slides show a project at completion",
-      images: [
+      image: 
         {
           title: 'title 1',
           path: '/thumb1.jpg',
-        },
-        {
-          title: 'title 2',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'title 3',
-          path: '/thumb3.jpg',
-        },
-        {
-          title: 'title 4',
-          path: '/thumb4.jpg',
-        },
-      ],
+          alt: 'my work example'
+        }
     },
     { promo : "these slides show a second project at completion",
-      images: [
+      image: 
         {
           title: 'dippy',
           sub: 'DIPPY',
           path: '/thumb4.jpg',
-        },
-        {
-          title: 'hippy',
-          sub: 'HIPPY',
-          path: '/thumb1.jpg',
-        },
-        {
-          title: 'slippy',
-          sub: 'SLIPPY',
-          path: '/thumb2.jpg',
-        },
-        {
-          title: 'drippy',
-          sub: 'DRIPPY',
-          path: '/thumb3.jpg',
-        },
-      ],
+        }
     },
   ],
 };
@@ -60,9 +32,7 @@ import 'swiper/css/pagination';
 import { Pagination} from 'swiper';
 
 // icons 
-import {
-  SlMagnifier
-} from 'react-icons/sl'
+import { SlMagnifier } from 'react-icons/sl'
 // next image
 import Image from 'next/image';
 
@@ -74,47 +44,44 @@ const WorkSlider = () => {
       freeMode={true}
       pagination={{clickable: true}}
       modules={[ Pagination]}
-      className='h-[280px] sm:h-[480px]'
+      className='h-[460px] sm:h-[580px]'
     >
       {workSlider.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={index}>
-              <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
-              {slide.images.map((image, index) => {
-                return (
+          <SwiperSlide key={index} >
+              <div className='flex justify-center lg:justify-start  cursor-pointer'>
+
                   <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index}>
                     <div 
                       className='flex items-center justify-center 
                       relative overflow-hidden group'
                     >
+                      <Image src={slide.image.path} width={680} height={454} alt='' />
                       
-                      {/* image */}
-                      <Image src={image.path} width={500} height={300} alt='' />
+                    
                       {/* overlay gradient */}
-                      <div className='absolute inset-0 bg-gradient-to-l from-[#4a22bd] 
-                      via-[#635bd5] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                      <div className='absolute inset-0 bg-gradient-to-l from-[#3b2874] 
+                      via-[#232323] to-[#29049a] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                       {/* title */}
                       <div 
                         className='absolute bottom-0 translate-y-full 
-                        group-hover:-translate-y-10 group-hover:xl:-translate-y-20
+                        group-hover:-translate-y-28 group-hover:sm:-translate-y-20 group-hover:xl:-translate-y-40
                         transition-all duration-300'
                       >
-                        <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                        <div className='flex justify-center gap-x-2 text-[13px] tracking-[0.2em]'>
                           {/* title part 1 */}
-                          <div className='duration-200 delay-100'>{image.title}</div>
+                          <div className='duration-200 delay-100'>{slide.image.title}</div>
                           {/* title part 2 */}
                           <div className='translate-y-[500%] group-hover:translate-y-0
-                            transition-all duration-250 delay-150'
-                          >{image.sub}</div>
+                            transition-all duration-250 delay-100'
+                          >{slide.image.sub}</div>
                           {/* icon */}
                           <div className='text-xl translate-y-[500%] group-hover:translate-y-0 
-                          transition-all duration-300 delay-200'><SlMagnifier /></div>
+                          transition-all duration-300 delay-100'><SlMagnifier /></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                )
-              })}
             </div>
             <p>{slide.promo}</p>
           </SwiperSlide>
