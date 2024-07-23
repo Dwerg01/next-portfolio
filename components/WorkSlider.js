@@ -1,11 +1,11 @@
 // data
 const workSlider = {
   slides: [
-    { promo : "these slides show a project at completion",
+    { promo : "Metafields offer a powerful and flexible way to enrich standard product data",
       image: 
         {
-          title: 'title 1',
-          path: '/thumb1.jpg',
+          title: 'Show the important data',
+          path: '/work\ Custom\ data.jpg',
           alt: 'my work example'
         }
     },
@@ -14,7 +14,23 @@ const workSlider = {
         {
           title: 'dippy',
           sub: 'DIPPY',
-          path: '/thumb4.jpg',
+          path: '/work\ Custom\ product\ cards.jpg',
+        }
+    },
+    { promo : "these slides show a second project at completion",
+      image: 
+        {
+          title: 'dippy',
+          sub: 'DIPPY',
+          path: '/work\ Eriu\ custom\ page.jpg',
+        }
+    },
+    { promo : "these slides show a second project at completion",
+      image: 
+        {
+          title: 'dippy',
+          sub: 'DIPPY',
+          path: '/work Nano-Nutrients.jpg',
         }
     },
   ],
@@ -44,7 +60,7 @@ const WorkSlider = () => {
       freeMode={true}
       pagination={{clickable: true}}
       modules={[ Pagination]}
-      className='h-[460px] sm:h-[580px]'
+      className='h-[460px] sm:h-[500px]'
     >
       {workSlider.slides.map((slide, index) => {
         return (

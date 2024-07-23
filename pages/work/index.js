@@ -29,7 +29,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className='h2 xl:mt-12'>
+              className='h2 xl:mt-12 text-3xl sm:text-5xl'>
               Work Projects <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p 
@@ -39,7 +39,6 @@ const Work = () => {
               exit="hidden"
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
               Here is a collection of previous projects, commissioned by past and long-standing customers.
-              Click on a tile to expand and read more
             </motion.p>
           </div>
           <motion.div

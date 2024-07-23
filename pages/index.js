@@ -39,8 +39,7 @@ const Home = () => {
           animate='show'
           exit='hidden' 
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-        >Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-         Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+        >Bring your ideas to life with Shopify <br/>and a <br/>developer who is a problem solver and original thinker 
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">

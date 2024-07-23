@@ -46,5 +46,14 @@ module.exports = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [
+    require('tailwind-scrollbar'),
+    function ({ addUtilities }) {
+      addUtilities({
+        'text-fill-white': {
+          '-webkit-text-fill-color': '#ffffff99 !important',
+        }
+    })
+  },
+  ],
 };

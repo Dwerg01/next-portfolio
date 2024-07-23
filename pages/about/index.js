@@ -5,16 +5,17 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaReact,
   FaWordpress,
+  FaShopify,
+  FaWater,
+  FaGithub,
   FaFigma,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiGimp,
+  SiCanva,
 } from "react-icons/si";
 
 
@@ -29,34 +30,27 @@ const aboutData = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
-          <FaReact />,
+          <FaShopify />,
+          <FaGithub />,
+          <FaWater />,
           <SiNextdotjs />,
-          <SiFramer />,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma />, <SiGimp />, <SiCanva />],
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+
   {
     title: 'experience',
     info: [
+      {
+        title: 'Shopify Expert - Freelance',
+        stage: '2021 - Present',
+      },
       {
         title: 'Tachnical Manager - Sintrex Integration Services',
         stage: '2019 - 2022',
@@ -75,16 +69,12 @@ const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Freemote Shopify Developer Bootcamp - Freemote, JHB, RSA',
+        stage: '2021',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'BA Psychology - University of South Africa, Pretoria, RSA',
+        stage: '2008',
       },
     ],
   },
@@ -99,7 +89,6 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../../variants";
 
 // counter
-import countUp from "react-countup";
 import CountUp from "react-countup";
 
 const About = () => {
@@ -136,9 +125,9 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0" 
           >
-            10 years ago, I began freelancing as a developer. 
+            3 years ago, I began freelancing as a developer. 
             Since then, I've done remote work for agencies, consulted for startups, 
-            and collaborated no digital products for business and consumer use
+            and collaborated a number of Shopify merchants 
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -150,43 +139,36 @@ const About = () => {
           >
             <div className="flex flex-1 xl:gap-x-6">
             {/* experience */}
-            <div className="relative flex-1 after:w-[1px] after:h-full 
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={12} duration={5} /> +
+              <div className="relative flex-1 after:w-[1px] after:h-full 
+                after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={3} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
+                  Years of experience
+                </div>
               </div>
-            <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
-              Years of experience
+              {/* clients */}
+              <div className="relative flex-1 after:w-[1px] after:h-full 
+                after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={25} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
+                  Satisfied Clients
+                </div>
               </div>
-            </div>
-            {/* clients */}
-            <div className="relative flex-1 after:w-[1px] after:h-full 
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={250} duration={5} /> +
+                {/* projects */}
+              <div className="relative flex-1 after:w-[1px] after:h-full 
+                after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={60} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
+                  Completed Projects
+                </div>
               </div>
-            <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
-              Satisfied Clients
-              </div>
-            </div>
-              {/* projects */}
-            <div className="relative flex-1 after:w-[1px] after:h-full 
-              after:bg-white/10 after:absolute after:top-0 after:right-0">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={250} duration={5} /> +
-              </div>
-            <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
-              Completed Projects
-              </div>
-            </div>
-            <div className="relative flex-1">
-              <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                <CountUp start={0} end={8} duration={5} /> +
-              </div>
-            <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
-              Awards
-              </div>
-            </div>
+
             </div>
           </motion.div>
   

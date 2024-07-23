@@ -1,5 +1,5 @@
 // FormSpree form
-import {useForm} from '@formspree/react';
+import {useForm, ValidationError} from '@formspree/react';
 // import Head from 'next/head';
 // components
 import Circles from '../../components/Circles';
@@ -14,7 +14,12 @@ import {motion} from 'framer-motion';
 import {fadeIn} from "../../variants"
 
 const Contact = () => {
-  const [state, handleSubmit, reset] = useForm('{your-form-id}');
+  const [state, handleSubmit, reset] = useForm('mayrkpwv');
+  if (state.succeeded) {
+    return (
+      <div>Thank you for your submission<span className='text-accent'>!</span></div>
+    )
+  }
   return (
     <div className='h-full bg-primary/30'>
       <Circles />
@@ -41,14 +46,26 @@ const Contact = () => {
             className='flex-1 flex flex-col gap-6 w-full mx-auto'>
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder='name' className="input" />
-              <input type="text" placeholder='email' className="input peer-autofill:bg-gray-500" />
+              <input id="firstName" type="text" placeholder='name' autoComplete="given-name" className="input capitalize autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(99,96,117)]" />
+              <ValidationError 
+                prefix="Name" 
+                field="firstName"
+                errors={state.errors}
+              />
+              <input id="email" type="email" placeholder='email' className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(99,96,117)]" />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+              />
             </div>
               <input type="text" placeholder='subject' className="input" />
               <textarea placeholder='message' className='textarea'></textarea>
               <button className='btn rounded-full border border-white/50 max-w-[170px]
-              px-8 transition-all duration-300 flex items-center justify-center
-              overflow-hidden hover:border-accent group'>
+                px-8 transition-all duration-300 flex items-center justify-center
+                overflow-hidden hover:border-accent group'
+                type="submit" disabled={state.submitting}
+              >
                 <span className='group-hover:-translate-y-[120%] group-hover:opacity-0
                 transition-all duration-500'>Let's talk</span>
                 <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex 
