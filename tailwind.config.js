@@ -22,8 +22,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131424',
-        secondary: '#393A47',
+        primary: '#001424',
+        secondary: '#133A47',
         accent: '#F13024',
       },
       backgroundImage: {
@@ -48,12 +48,6 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
-    function ({ addUtilities }) {
-      addUtilities({
-        'text-fill-white': {
-          '-webkit-text-fill-color': '#ffffff99 !important',
-        }
-    })
-  },
+  
   ],
 };

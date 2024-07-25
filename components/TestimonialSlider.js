@@ -1,25 +1,29 @@
 // testimonial data
 const testimonialSlider = [
   {
-    image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    image: '/Simone\ headshot.webp',
+    name: 'Simone',
+    position: 'Web Designer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Nardu is a great choice for improving upon any Shopify store needing a developer\'s knowledge and skills. Our team will definitely work with Nardu in the future.',
   },
   {
-    image: '/t-avt-2.png',
-    name: 'Jane Doe',
-    position: 'Customer',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    image: '/zoe\ tp.webp',
+    name: 'Zoë',
+    position: 'Owner/Founder',
+    message: 'Im proud of you! So much skill involved here in design and practicality its rare to find someone who can do both those jobs so well!',
   },
   {
-    image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
-    message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+    image: '/Marco\ headshot.webp',
+    name: 'Marco',
+    position: 'Digital Marketing Expert',
+    message: 'Very professional, quick and reliable!',
+  },
+  {
+    image: '/no\ photo\ available.png',
+    name: 'Mendel',
+    position: 'Distributor',
+    message: 'Nardu was pretty much always available to meet or message, with timely progress updates, and incredible turnaround time.',
   },
 ];
 
@@ -47,7 +51,7 @@ const TestimonialSlider = () => {
       navigation={true}
       pagination={{clickable: true}}
       modules={[Navigation, Pagination]}
-      className='h-[400px]'
+      className='h-[500px] sm:h-[400px] xl:w-10/12'
     >
       {testimonialSlider.map((person, index) => {
         return (

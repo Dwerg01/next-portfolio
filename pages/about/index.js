@@ -97,14 +97,15 @@ const About = () => {
     <div className="h-full
     bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
-      {/* avatar img */}
-      <motion.div 
-        variants={fadeIn('right', 0.2)} 
-        initial="hidden" 
-        animate="show" 
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
-      >
+      {/* avatar image */}
+      <motion.div
+        variants={fadeIn('up', 0.5)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        transition={{duration: 1, ease: 'easeInOut'}}
+        className="w-full h-full max-w-[553px] max-h-[508px]
+        absolute -bottom-32 lg:bottom-0 lg:right-[8%]">
         <Avatar />
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">

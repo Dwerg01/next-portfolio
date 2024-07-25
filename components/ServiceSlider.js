@@ -10,40 +10,44 @@ import 'swiper/css/pagination';
 import {
   RxCrop,
   RxDesktop,
-  RxPencil2,
+  RxLightningBolt,
   RxReader,
-  RxRocket,
+  RxCode,
   RxArrowTopRight,
 } from "react-icons/rx";
+
+import {
+  SiBrandfolder,
+} from "react-icons/si";
 
 // import required modules
 import { FreeMode, Pagination} from 'swiper';
 
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Convey your unique message and selling points with custom developed pages or sections.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxLightningBolt />,
+    title: 'Optimization',
+    description: 'The speed of any website is crucial, and I optimize websites, images and media for optimal performance.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxCrop />,
+    title: 'Customization',
+    description: 'Enrich product detail with technical specs, designer details, ingredients or creative application ideas.',
+  },
+  {
+    icon: <SiBrandfolder />,
+    title: 'Branding',
+    description: 'Consistent branding and messaging makes a website look legitimate. I ensure this consistency in development.',
+  },
+  {
+    icon: <RxCode />,
+    title: 'Specialize',
+    description: 'Shopify app selection and integration that meet specific business needs, for a better shopping experience.',
   },
 ];
 

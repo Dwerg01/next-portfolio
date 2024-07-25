@@ -11,12 +11,15 @@ import {fadeIn} from "../../variants"
 // import next head for title and meta
 import Head from 'next/head';
 
+import { SlMagnifier } from 'react-icons/sl'
+
 const Work = () => {
   return (
     <>
     <Head>
-      <title>my work</title>
+      <title>Nardu.info - Shopify developer portfolio of real completed tasks</title>
       <meta name="description" content="Turn the algorithm into a friend. Make your business visible online with 55+ tools for SEO, PPC, content, social media, competitive research, and more."/>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
     </Head>
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
@@ -29,7 +32,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className='h2 xl:mt-12 text-3xl sm:text-5xl'>
+              className='h2 sm:mt-16 xl:mt-8 text-3xl md:text-5xl'>
               Work Projects <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p 
@@ -38,7 +41,8 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              Here is a collection of previous projects, commissioned by past and long-standing customers.
+              My portfolio of selected projects completed for Shopify merchants, combining different services and skills.<br/>
+              < SlMagnifier className="inline font-black"/> Hover or tap for more
             </motion.p>
           </div>
           <motion.div

@@ -9,7 +9,8 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../../variants"
 
 const Services = () => {
-  return <div className='h-full bg-primary/30 py-36 flex items-center'>
+  return (
+  <div className='h-full bg-primary/30 py-36 flex items-center'>
     <Circles />
     <div className="container mx-auto">
       <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -29,9 +30,7 @@ const Services = () => {
             animate="show"
             exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Molestiae accusamus tempore adipisci ipsam veritatis aspernatur eius. 
-            Maxime, ut.
+              I pay attention to detail to make sure my clients' needs are met and their Shopify stores look great on any device. <br/>Over and above all, I strive to deliver on time and on budget.
           </motion.p>
         </div>
         <motion.div
@@ -49,6 +48,7 @@ const Services = () => {
     </div>
     <Bulb />
   </div>
+  )
 };
 
 export default Services;
