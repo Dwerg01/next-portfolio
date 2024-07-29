@@ -20,7 +20,7 @@ const testimonialSlider = [
     message: 'Very professional, quick and reliable!',
   },
   {
-    image: '/no\ photo\ available.png',
+    image: '/Mendel\ headshot.webp',
     name: 'Mendel',
     position: 'Distributor',
     message: 'Nardu was pretty much always available to meet or message, with timely progress updates, and incredible turnaround time.',
@@ -65,7 +65,7 @@ const TestimonialSlider = () => {
                   <div className='flex flex-col justify-center text-center'>
                     {/* avatar */}
                     <div className='mb-2 mx-auto'>
-                      <Image src={person.image} width={100} height={100} alt=''/>
+                      <Image src={person.image} width={120} height={120} alt=''/>
                     </div>
                     {/* name */}
                     <div className='text-lg '>{person.name}</div>

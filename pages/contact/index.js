@@ -3,7 +3,7 @@ import {useForm, ValidationError} from '@formspree/react';
 // import Head from 'next/head';
 // components
 import Circles from '../../components/Circles';
-
+import Head from 'next/head';
 //icons
 import {BsArrowRight} from 'react-icons/bs';
 
@@ -14,13 +14,22 @@ import {motion} from 'framer-motion';
 import {fadeIn} from "../../variants"
 
 const Contact = () => {
-  const [state, handleSubmit, reset] = useForm('mayrkpwv');
+  const [state, handleSubmit] = useForm('mayrkpwv');
   if (state.succeeded) {
     return (
+    <>
       <div>Thank you for your submission<span className='text-accent'>!</span></div>
+      <button onClick={reset}>Reset</button>
+    </>
     )
   }
   return (
+  <>
+    <Head>
+      <title>Nardu.info - Ready to boost your Shopify store? Let's Talk</title>
+      <meta name="description" content="Let's enhance your Shopify store with expert front-end development.\
+      I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
+    </Head>
     <div className='h-full bg-primary/30'>
       <Circles />
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -46,13 +55,13 @@ const Contact = () => {
             className='flex-1 flex flex-col gap-6 w-full mx-auto'>
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input id="firstName" type="text" placeholder='name' autoComplete="given-name" className="input capitalize autofill:text-white autofill:shadow-[inset_0_0_0px_1000px_rgb(99,96,117)]" />
+              <input id="firstName" type="text" placeholder='name' autoComplete="given-name" className="input capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
               <ValidationError 
                 prefix="Name" 
                 field="firstName"
                 errors={state.errors}
               />
-              <input id="email" type="email" placeholder='email' className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(99,96,117)]" />
+              <input id="email" type="email" placeholder='email' className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
               <ValidationError 
                 prefix="Email" 
                 field="email"
@@ -75,6 +84,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   )
 };
 

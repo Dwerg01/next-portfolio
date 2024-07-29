@@ -88,12 +88,20 @@ import Circles from "../../components/Circles";
 import {motion} from "framer-motion";
 import {fadeIn} from "../../variants";
 
+import Head from "next/head";
 // counter
 import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
   return ( 
+  <>  
+    <Head>
+      <title>Nardu.info - Shopify Front-End Developer | Let's Grow Your Business</title>
+      <meta name="description" content="Experienced Shopify front-end developer with 3+ years beautifying e-commerce stores. Let's transform your Shopify store into a great buying experience.\
+       I specialize in creating, intuitive user experiences, and optimized performance."/>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+    </Head>
     <div className="h-full
     bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -112,7 +120,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 
-            className="h2"
+            className="h2 sm:mb-8"
             variants={fadeIn('right', 0.2)} 
             initial="hidden" 
             animate="show" 
@@ -138,14 +146,14 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 gap-x-2 xl:gap-x-6">
             {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full 
                 after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={3} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[105px]">
                   Years of experience
                 </div>
               </div>
@@ -155,8 +163,8 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={25} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied Clients
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[105px]">
+                  Satisfied<br/> Clients
                 </div>
               </div>
                 {/* projects */}
@@ -165,7 +173,7 @@ const About = () => {
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={60} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[100px]">
+                <div className="text-xs uppercase tracking=[1px] leading-[1.4] max-w-[105px]">
                   Completed Projects
                 </div>
               </div>
@@ -223,6 +231,7 @@ const About = () => {
         </motion.div>
       </div>
     </div>
+  </>
   )
 };
 

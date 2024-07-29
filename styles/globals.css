@@ -45,13 +45,13 @@
     @apply h-[52px];
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 !bg-transparent;
+    @apply w-full h-[52px] rounded-lg pl-6 text-secondary/80 font-semibold;
   }
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply outline-none focus:ring-1 focus:ring-accent border border-white/20 text-secondary/80 font-semibold placeholder:text-[#131314]/80 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6 placeholder:capitalize rounded-lg resize-none;
   }
 }

@@ -62,7 +62,7 @@ const WorkSlider = () => {
       freeMode={true}
       pagination={{clickable: true}}
       modules={[ Pagination]}
-      className='h-[480px] sm:h-[560px]'
+      className='h-[480px] sm:h-[520px]'
     >
       {workSlider.slides.map((slide, index) => {
         return (
