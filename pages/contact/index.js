@@ -46,7 +46,8 @@ const Contact = () => {
             Let&apos;s <span className='text-accent'>connect.</span>
           </motion.h2>
           {/* form */}
-          <motion.form 
+          <motion.div>
+            <form
             onSubmit={handleSubmit}
             variants={fadeIn('up', 0.4)}
             initial='hidden'
@@ -84,7 +85,8 @@ const Contact = () => {
                 <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex 
                 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
               </button>
-          </motion.form>
+              </form>
+          </motion.div>
         </div>
       </div>
     </div>
