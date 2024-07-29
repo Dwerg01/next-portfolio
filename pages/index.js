@@ -49,7 +49,7 @@ const Home = () => {
           I&apos;m a developer who is a problem solver and original thinker 
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-20">
             <ProjectsBtn />
           </div>
           <motion.div 

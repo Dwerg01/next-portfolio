@@ -1,0 +1,14 @@
+{
+    "forms" : {
+        "contact" : {
+            "name" : "Contact form",
+            "actions" : [{ "type": "email", "to": "hello@nardu.info" }],
+            "fields" : {   
+                "name": {"required": "true"},
+                "email": {"required": "true"},
+                "message": {"required": "true"}
+            }
+            
+        }
+    }
+}
