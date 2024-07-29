@@ -18,7 +18,7 @@ const Contact = () => {
   if (state.succeeded) {
     return (
     <>
-      <div>Thank you, I'll be in touch<span className='text-accent'>!</span></div>
+      <div>Thank you, I&apos;ll be in touch<span className='text-accent'>!</span></div>
       <button onClick={reset}>Reset</button>
     </>
     )
@@ -26,7 +26,7 @@ const Contact = () => {
   return (
   <>
     <Head>
-      <title>Nardu.info - Ready to boost your Shopify store? Let's Talk</title>
+      <title>Nardu.info - Ready to boost your Shopify store? Let&apos;s Talk</title>
       <meta name="description" content="Let's enhance your Shopify store with expert front-end development.\
       I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
     </Head>
@@ -43,7 +43,7 @@ const Contact = () => {
             animate='show'
             exit='hidden'
             >
-            Let's <span className='text-accent'>connect.</span>
+            Let&apos;s <span className='text-accent'>connect.</span>
           </motion.h2>
           {/* form */}
           <motion.form 
@@ -80,7 +80,7 @@ const Contact = () => {
                 type='submit' disabled={state.submitting}
               >
                 <span className='group-hover:-translate-y-[120%] group-hover:opacity-0
-                transition-all duration-500'>Let's talk</span>
+                transition-all duration-500'>Let&apos;s talk</span>
                 <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex 
                 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
               </button>

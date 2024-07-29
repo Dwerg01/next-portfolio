@@ -26,24 +26,24 @@ const aboutData = [
     info: [
       {
         title: 'Web Development',
+
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaShopify />,
-          <FaGithub />,
-          <FaWater />,
-          <SiNextdotjs />,
-          <FaWordpress />,
+          <FaHtml5 key="html5"/>,
+          <FaCss3 key="css3"/>,
+          <FaJs key="js"/>,
+          <FaShopify key="Shopify"/>,
+          <FaGithub key="github"/>,
+          <FaWater key="liquid"/>,
+          <SiNextdotjs key="Nextdotjs"/>,
+          <FaWordpress key="wordpress"/>,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiGimp />, <SiCanva />],
+        icons: [<FaFigma key="figma"/>, <SiGimp key="GIMP"/>, <SiCanva key="Canva"/>],
       },
     ],
   },
-
   {
     title: 'experience',
     info: [
@@ -97,7 +97,7 @@ const About = () => {
   return ( 
   <>  
     <Head>
-      <title>Nardu.info - Shopify Front-End Developer | Let's Grow Your Business</title>
+      <title>Nardu.info - Shopify Front-End Developer | Let&apos;s Grow Your Business</title>
       <meta name="description" content="Experienced Shopify front-end developer with 3+ years beautifying e-commerce stores. Let's transform your Shopify store into a great buying experience.\
        I specialize in creating, intuitive user experiences, and optimized performance."/>
       <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -135,7 +135,7 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0" 
           >
             3 years ago, I began freelancing as a developer. 
-            Since then, I've done remote work for agencies, consulted for startups, 
+            Since then, I&apos;ve done remote work for agencies, consulted for startups, 
             and collaborated a number of Shopify merchants 
           </motion.p>
           {/* counters */}
@@ -221,7 +221,7 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((icon, indexItem) => {
-                    return <div className="text-2xl text-white">{icon}</div>
+                    return <div className="text-2xl text-white" key={indexItem}>{icon}</div>
                   })}
                 </div>
               </div>

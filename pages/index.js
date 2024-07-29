@@ -46,7 +46,7 @@ const Home = () => {
             exit='hidden' 
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >Bring your ideas to life with Shopify <br/>
-          I'm a developer who is a problem solver and original thinker 
+          I&apos;m a developer who is a problem solver and original thinker 
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">

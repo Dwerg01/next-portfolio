@@ -37,7 +37,7 @@ const Services = () => {
             animate="show"
             exit="hidden"
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              I pay attention to detail to ensure requirements are met and merchants' Shopify stores look great on any device. <br/>Over and above all, I strive to deliver on time and on budget.
+              I pay attention to detail to ensure requirements are met and merchants&apos; Shopify stores look great on any device. <br/>Over and above all, I strive to deliver on time and on budget.
           </motion.p>
         </div>
         <motion.div
