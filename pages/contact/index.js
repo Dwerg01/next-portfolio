@@ -14,11 +14,11 @@ import {motion} from 'framer-motion';
 import {fadeIn} from "../../variants"
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm('mayrkpwv');
+  const [state, handleSubmit, reset] = useForm("mayrkpwv");
   if (state.succeeded) {
     return (
     <>
-      <div>Thank you for your submission<span className='text-accent'>!</span></div>
+      <div>Thank you, I'll be in touch<span className='text-accent'>!</span></div>
       <button onClick={reset}>Reset</button>
     </>
     )
@@ -55,25 +55,29 @@ const Contact = () => {
             className='flex-1 flex flex-col gap-6 w-full mx-auto'>
             {/* input group */}
             <div className="flex gap-x-6 w-full">
+              <label for="firstName" className='hidden'>Name</label>
               <input id="firstName" type="text" placeholder='name' autoComplete="given-name" className="input capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
               <ValidationError 
                 prefix="Name" 
                 field="firstName"
                 errors={state.errors}
               />
-              <input id="email" type="email" placeholder='email' className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
+              <label for="email" className='hidden'>Email</label>
+              <input id="email" type="email" placeholder='email' autoComplete='email' className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
               <ValidationError 
                 prefix="Email" 
                 field="email"
                 errors={state.errors}
               />
             </div>
-              <input type="text" placeholder='subject' className="input" />
-              <textarea placeholder='message' className='textarea'></textarea>
+              <label for="subject" className='hidden'>subject</label>
+              <input id="subject" type="text" placeholder='About' className="input" />
+              <label for="message" className='hidden'>subject</label>
+              <textarea id='message' placeholder='How can I help?' className='textarea'></textarea>
               <button className='btn rounded-full border border-white/50 max-w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group'
-                type="submit" disabled={state.submitting}
+                type='submit' disabled={state.submitting}
               >
                 <span className='group-hover:-translate-y-[120%] group-hover:opacity-0
                 transition-all duration-500'>Let's talk</span>
