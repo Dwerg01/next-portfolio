@@ -1,12 +1,13 @@
 {
     "forms" : {
         "contact" : {
-            "name" : "Contact form",
-            "actions" : [{ "type": "email", "to": "hello@nardu.info" }],
+            "name" : "Contact Form",
+            "actions" : [{ "type": "email", "to": "admin@nardu.info" }],
             "fields" : {   
-                "name": {"required": "true"},
-                "email": {"required": "true"},
-                "message": {"required": "true"}
+                "name": {"required": "true", "type": "text"},
+                "email": {"required": "true", "type": "email"},
+                "subject": {"required": "true", "type": "text"},
+                "message": {"required": "false", "type": "textarea"}
             }
             
         }

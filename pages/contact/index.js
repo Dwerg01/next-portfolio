@@ -73,7 +73,7 @@ const Contact = () => {
               <label htmlFor="subject" className='hidden'>subject</label>
               <input id="subject" type="text" placeholder='About' className="input" />
               <label htmlFor="message" className='hidden'>subject</label>
-              <textarea id='message' placeholder='How can I help?' className='textarea'></textarea>
+              <textarea id='message' type="textarea" placeholder='How can I help?' className='textarea'></textarea>
               <button className='btn rounded-full border border-white/50 max-w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group'
