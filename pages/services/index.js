@@ -15,7 +15,6 @@ const Services = () => {
     <title>Nardu.info - Shopify Developer services tailored for merchants</title>
     <meta name="description" content="Let's enhance your Shopify store with expert front-end development.\
      I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
-    <link rel="icon" href="/favicon.ico" sizes="any" />
   </Head>
   <div className='h-full bg-primary/30 py-36 flex items-center'>
     <Circles />

@@ -1,6 +1,6 @@
 import {Sora} from "next/font/google"
 import Head from "next/head";
-import { GoogleTagManager } from "@next/third-parties/google";
+
 
 const sora = Sora({
   subsets: ["latin"],
@@ -16,7 +16,6 @@ const Layout = ({children}) => {
   <>
     <Head>
       <title>Nardu.info website</title>
-      <GoogleTagManager gtmId="GTM-PXC3S4B6" />
       <meta name="description" content="Freelance Shopify specialist from South Africa"/>
       <link rel="icon" href="../favicon.ico" sizes="any" />
     </Head>
@@ -26,7 +25,7 @@ const Layout = ({children}) => {
       <TopLeftImg />
       <Nav />
       <Header />
-      {children}
+      <main>{children}</main>
     </div>
   </>
   );
