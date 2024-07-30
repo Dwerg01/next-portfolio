@@ -25,7 +25,7 @@ const Layout = ({children}) => {
       <TopLeftImg />
       <Nav />
       <Header />
-      <main>{children}</main>
+      {children}
     </div>
   </>
   );
