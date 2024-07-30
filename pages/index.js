@@ -44,9 +44,17 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden' 
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-2 xl:mb-8 text-xl"
+          >Hi, my name is <span className="text-accent font-semibold text-2xl">Nardu.</span>
+          </motion.p>
+          <motion.p           
+            variants={fadeIn('down', 0.3)}
+            initial='hidden'
+            animate='show'
+            exit='hidden' 
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-          >Bring your ideas to life with Shopify <br/>
-          I&apos;m a developer who is a problem solver and original thinker 
+          >I offer Shopify focused developer services<br/>
+           Let&apos;s collaborate to turn your vision into a successful Shopify store
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative z-20">
@@ -57,7 +65,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="hidden xl:flex"
+            className="hidden xl:flex z-20"
           >
             <ProjectsBtn />
           </motion.div>
