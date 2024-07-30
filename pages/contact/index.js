@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
           <motion.h2 
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-4 xl:mb-8"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
@@ -69,7 +69,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto">
+            className="flex-1 flex flex-col gap-4 lg:gap-6 w-full mx-auto z-20">
             {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input id="firstName" name="firstName" type="text" placeholder="name" autoComplete="given-name" className="input capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
@@ -89,14 +89,14 @@ const Contact = () => {
             </div>
               <label htmlFor="subject" className="hidden">subject</label>
               <input id="subject" name="subject" type="text" placeholder="About" className="input" />
-              <label htmlFor="message" className="hidden">subject</label>
+              <label htmlFor="message" className="hidden">message</label>
               <textarea id="message" name="message" type="textarea" placeholder="How can I help?" className="textarea"></textarea>
-              <button className="btn rounded-full border border-white/50 max-w-[170px]
+              <button className="btn rounded-full border border-white/50 w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
-                overflow-hidden hover:border-accent group"
+                overflow-hidden hover:border-accent group mx-auto"
                 type="submit" disabled={state.submitting}>
                 <span className="group-hover:-translate-y-[120%] group-hover:opacity-0
-                transition-all duration-500">Let&apos;s talk</span>
+                transition-all duration-500">Send</span>
                 <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex 
                 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"/>
               </button>

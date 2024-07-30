@@ -59,10 +59,6 @@ const aboutData = [
         title: 'Skills Development Facilitator - Sintrex Integration Services',
         stage: '2016 - 2019',
       },
-      {
-        title: 'Sales Representative - Sintrex Integration Services',
-        stage: '2011 - 2016',
-      },
     ],
   },
   {
@@ -103,7 +99,7 @@ const About = () => {
       <link rel="icon" href="/favicon.ico" sizes="any" />
     </Head>
     <div className="h-full
-    bg-primary/30 py-32 text-center xl:text-left">
+    bg-primary/30 py-28 md:py-32 text-center xl:text-left">
       <Circles />
       {/* avatar image */}
       <motion.div
@@ -120,13 +116,14 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 
-            className="h2 sm:mb-8"
+            className="h2 sm:mb-8 "
             variants={fadeIn('right', 0.2)} 
             initial="hidden" 
             animate="show" 
             exit="hidden"
           >
-            Captivating <span className="text-accent">stories</span> birth magnificent designs</motion.h2>
+            <span className="text-accent">Creativity</span> & <span className="text-accent">Experience</span> 
+            </motion.h2>
           <motion.p 
             variants={fadeIn('right', 0.4)} 
             initial="hidden" 
@@ -135,8 +132,8 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0" 
           >
             3 years ago, I began freelancing as a developer. 
-            Since then, I&apos;ve done remote work for agencies, consulted for startups, 
-            and collaborated a number of Shopify merchants 
+            I&apos;ve worked with agencies, consulted  
+            and collaborated with a number of Shopify merchants 
           </motion.p>
           {/* counters */}
           <motion.div 

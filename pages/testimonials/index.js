@@ -17,9 +17,9 @@ const Testimonials = () => {
         initial="hidden" 
         animate="show" 
         exit="hidden" 
-        className="h2 mb-8 xl:mb-0"
+        className="h2 mb-4 sm:mb-8 xl:mb-0"
         >
-        What clients <span className="text-accent">say.</span></motion.h2>
+        What clients <span className="text-accent">say .</span></motion.h2>
       {/* slider  */}
       <motion.div
         variants={fadeIn('up', 0.4)} 

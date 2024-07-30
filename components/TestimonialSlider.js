@@ -51,7 +51,7 @@ const TestimonialSlider = () => {
       navigation={true}
       pagination={{clickable: true}}
       modules={[Navigation, Pagination]}
-      className='h-[500px] sm:h-[400px] xl:w-10/12'
+      className='h-[400px] sm:h-[400px] xl:w-10/12'
     >
       {testimonialSlider.map((person, index) => {
         return (
@@ -79,7 +79,7 @@ const TestimonialSlider = () => {
                 xl:before:left-0 xl:before:h-[200px] relative xl:pl-20'>
                   {/* quote icon */}
                   <div className='mb-4'>
-                    <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0'/>
+                    <FaQuoteLeft className='text-2xl xl:text-6xl text-white/20 mx-auto md:mx-0'/>
                   </div>
                   {/* message */}
                   <div className='xl:text-lg text-center md:text-left'>{person.message}</div>

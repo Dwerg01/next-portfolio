@@ -25,7 +25,7 @@ const Work = () => {
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
       <div className="container mx-auto">
-        <div className='flex flex-col xl:flex-row gap-x-8 mt-20'>
+        <div className='flex flex-col xl:flex-row gap-x-8 mt-48 sm:mt-12'>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left xl:mb-0'>
             <motion.h2 
@@ -42,8 +42,8 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className='mb-2 max-w-[400px] mx-auto lg:mx-0'>
-              My portfolio of selected projects, completed for Shopify merchants combining different services and skills.<br/>
-              < SlMagnifier className="inline font-black"/> Hover or tap for more
+              Selected projects, completed for Shopify merchants combining different services and skills.<br/>
+              < SlMagnifier className="ml-auto sm:hidden"/>
             </motion.p>
           </div>
           <motion.div
