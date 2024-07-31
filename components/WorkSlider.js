@@ -6,7 +6,7 @@ const workSlider = {
         {
           title: 'Custom Data with Metafields',
           sub: 'For unique product information and specs, display any custom data and show your shoppers',
-          path: '/work\ Custom\ data.jpg',
+          path: '/work\ Custom\ data.webp',
           alt: 'Shipping lead time displayed on products cards, to inform shoppers'
         }
       },
@@ -15,7 +15,7 @@ const workSlider = {
         {
           title: 'Purpose-fit Shopify sections from scratch',
           sub: 'No two brands are the same and each one has a unique story to tell',
-          path: '/work\ Eriu\ custom\ page.jpg',
+          path: '/work\ Eriu\ custom\ page.webp',
           alt: 'Fully custom Shopify sections from scratch'
         }
       },
@@ -24,8 +24,8 @@ const workSlider = {
         {
           title: 'Customize your store to suit your goals',
           sub: 'Let your products shine, without relying on buyers to read less visible info',
-          path: '/work\ Custom\ product\ cards.jpg',
-          alt: 'my work example'
+          path: '/work\ Custom\ product\ cards.webp',
+          alt: 'customized product cards to enhance important info'
         }
       },
       { promo : "Custom Landing pages and Storefronts built with PageFly",
@@ -33,8 +33,8 @@ const workSlider = {
         {
           title: 'Promotions and landing pages',
           sub: 'A different approach to promoting a product will evoke a different response from shoppers, naturally.',
-          path: '/work Nano-Nutrients.jpg',
-          alt: 'PageFly store and landing page builds'
+          path: '/work Nano-Nutrients.webp',
+          alt: 'fully responsive PageFly landing page builds'
         }
       },
     ],
@@ -74,7 +74,7 @@ const WorkSlider = () => {
                       className='flex items-center justify-center 
                       relative overflow-hidden group'
                     >
-                      <Image src={slide.image.path} width={680} height={454} alt='' />
+                      <Image src={slide.image.path} width={680} height={454} alt={slide.image.alt} />
                       
                     
                       {/* overlay gradient */}
