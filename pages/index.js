@@ -19,9 +19,9 @@ const Home = () => {
   <>
   <Head>
     <title>Nardu.info - Shopify Expert, Front-End Developer services</title>
-    <meta name="description" content="Let's enhance your Shopify store with expert front-end development.\
+    <meta name="description" content="Let's enhance your Shopify store with expert front-end development.
      I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
-     <meta property="og:image" content="/Nardu\ Shopify\ developer\ avatar.webp" />
+     <meta property="og:image" content="/Nardu\ Shopify\ developer\ avatar.jpg" />
   </Head>
     <div className="bg-primary/60 h-full">
       {/* text */}
