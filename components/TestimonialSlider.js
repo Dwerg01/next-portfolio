@@ -11,7 +11,7 @@ const testimonialSlider = [
     image: '/zoe\ tp.webp',
     name: 'Zoë',
     position: 'Owner/Founder',
-    message: 'Im proud of you! So much skill involved here in design and practicality its rare to find someone who can do both those jobs so well!',
+    message: 'I\'m proud of you! So much skill involved here in design and practicality its rare to find someone who can do both those jobs so well!',
   },
   {
     image: '/Marco\ headshot.webp',

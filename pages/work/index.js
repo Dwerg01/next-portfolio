@@ -20,12 +20,11 @@ const Work = () => {
       <title>Nardu.info - Shopify developer portfolio of recent completed jobs</title>
       <meta name="description" content="Expert Shopify developer specializing in front-end design and Liquid coding.\
        Delivering high-converting, visually stunning online stores with meticulous attention to detail. PageFly partner."/>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
     </Head>
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
       <div className="container mx-auto">
-        <div className='flex flex-col xl:flex-row gap-x-8 mt-48 sm:mt-12'>
+        <div className='flex flex-col xl:flex-row gap-x-8 mt-40 sm:mt-12'>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left xl:mb-0'>
             <motion.h2 

@@ -96,7 +96,6 @@ const About = () => {
       <title>Nardu.info - Shopify Front-End Developer | Let&apos;s Grow Your Business</title>
       <meta name="description" content="Experienced Shopify front-end developer with 3+ years beautifying e-commerce stores. Let's transform your Shopify store into a great buying experience.\
        I specialize in creating, intuitive user experiences, and optimized performance."/>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
     </Head>
     <div className="h-full
     bg-primary/30 py-28 md:py-32 text-center xl:text-left">
@@ -116,7 +115,7 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 
-            className="h2 sm:mb-8 "
+            className="h2 sm:mb-8 xl:-mt-10"
             variants={fadeIn('right', 0.2)} 
             initial="hidden" 
             animate="show" 

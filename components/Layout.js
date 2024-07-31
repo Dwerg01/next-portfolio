@@ -15,8 +15,9 @@ const Layout = ({children}) => {
   return ( 
   <>
     <Head>
-      <title>Nardu.info website</title>
+      <title>Nardu.info Shopify developer website</title>
       <meta name="description" content="Freelance Shopify specialist from South Africa"/>
+      
       <link rel="icon" href="../favicon.ico" sizes="any" />
     </Head>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXC3S4B6"
