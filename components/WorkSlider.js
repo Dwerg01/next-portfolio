@@ -82,16 +82,16 @@ const WorkSlider = () => {
                       via-[#232323] to-[#2a049a] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                       {/* title */}
                       <div 
-                        className='absolute bottom-0 sm:bottom-[10%] translate-y-full mx-8 sm:mx-4
-                        group-hover:-translate-y-full group-hover:sm:-translate-y-40 group-hover:xl:-translate-y-44
+                        className='absolute bottom-0 translate-y-full mx-6 sm:mx-4
+                        group-hover:-translate-y-[20vw] group-hover:sm:-translate-y-40 group-hover:xl:-translate-y-44
                         transition-all duration-300'
                       >
                         <div className='flex-col justify-center items-center gap-y-2 text-[13px] tracking-[0.2em] sm:max-w-prose'>
                           {/* title part 1 */}
-                          <div className='duration-200 delay-100 text-lg'>{slide.image.title}</div>
+                          <div className='duration-200 delay-100 text-base font-bold sm:text-lg leading-tight'>{slide.image.title}</div>
                           {/* title part 2 */}
                           <div className='translate-y-[500%] group-hover:translate-y-0
-                            transition-all duration-250 delay-100'
+                            transition-all duration-250 delay-100 leading-tight'
                           >{slide.image.sub}</div>
                         </div>
                       </div>
