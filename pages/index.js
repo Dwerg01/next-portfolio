@@ -19,12 +19,15 @@ const Home = () => {
   <>
   <Head>
     <title>Nardu.info - Shopify Expert, Front-End Developer services</title>
+    <meta property="title" content="Shopify Expert, Front-End Developer services" />
+    <meta property="image" content="../public/Nardu Shopify developer avatar.jpg" key="image"/>
     <meta name="description" content="Let's enhance your Shopify store with expert front-end development.
      I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
-    <meta property="og:image" content="public/Nardu Shopify developer avatar.jpg" />
-    <meta property="og:title" content="Nardu.info - Shopify Expert, Front-End Developer services" />
+    <meta property="og:title" content="Shopify Expert, Front-End Developer services" />
+    <meta property="og:image" content="../public/Nardu Shopify developer avatar.jpg" key="ogimage"/>
     <meta property="og:description" content="Let's enhance your Shopify store with expert front-end development.
-     I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
+     I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
+    <meta property="url" content="https://nardu.info" />
     <meta property="og:url" content="https://nardu.info" />
     <meta property="og:type" content="website" />
   </Head>

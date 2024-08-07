@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+
+  --swiper-navigation-size: 80px;
+}
+
 .translate-z-0 {
   transform: translateZ(0px);
 }
@@ -13,10 +18,14 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
-.swiper-button-next:after,
+/* .swiper-button-next:after, */
 .swiper-rtl .swiper-button-prev:after {
   color: #f13024;
+  background:#ffffff22;
+  border-radius: 44px;
+  padding: 8px;
 }
+
 
 ::selection {
   background: #ff4f26;
