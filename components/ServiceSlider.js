@@ -1,5 +1,6 @@
 // import swiper react components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 
 // import swiper styles
 import 'swiper/css';
@@ -72,7 +73,7 @@ const ServiceSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-4 md:py-8 flex 
-            sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
+            sm:flex-col gap-x-6 sm:gap-x-0 group  
             hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 mb-2">
               {/* icon */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
@@ -82,9 +83,11 @@ const ServiceSlider = () => {
                 <p className='max-w-[350px] leading-normal'>{item.description}</p>
               </div>
               {/* arrow */}
-              <a href="/contact" className='text-3xl'>
-                <RxEnvelopeClosed className='rotate-0 group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>
-              </a>
+
+              <Link href="/contact" className='text-3xl cursor-pointer'>
+                 <RxEnvelopeClosed className='rotate-0 group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>
+              </Link>
+
             </div>
           </SwiperSlide>
         );

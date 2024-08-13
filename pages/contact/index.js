@@ -51,6 +51,8 @@ const Contact = () => {
       <title>Nardu.info - Ready to boost your Shopify store? Let&apos;s Talk</title>
       <meta name="description" content="Let&apos;s enhance your Shopify store with expert front-end development.\
       I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
+      <meta name="og:description" content="Let&apos;s enhance your Shopify store with expert front-end development.\
+      I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
     </Head>
     <div className="h-full bg-primary/30">
       <Circles />
@@ -65,7 +67,7 @@ const Contact = () => {
             animate="show"
             exit="hidden"
             >
-            Let&apos;s <span className="text-accent">connect.</span>
+            <span className="text-accent">Contact </span> me .
           </motion.h2>
           {/* form */}
           <motion.form
@@ -95,7 +97,7 @@ const Contact = () => {
               <label htmlFor="subject" className="hidden">subject</label>
               <input id="subject" name="subject" type="text" placeholder="About" className="input" />
               <label htmlFor="message" className="hidden">message</label>
-              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let's make something cool" className="textarea"></textarea>
+              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let&apos;s make something cool" className="textarea"></textarea>
               <button className="btn rounded-full border border-white/50 w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group mx-auto"
