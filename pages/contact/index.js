@@ -18,6 +18,11 @@ const Contact = () => {
   if (state.succeeded) {
     return (
     <>
+      <Head>
+        <title>Nardu.info | Shopify Developer | Let's Connect</title>
+        <meta name="description" content="Request a no-obligation call about your Shopify business goals. Let's put our heads together on how to enhance your Shopify store and offer an improved buying experience."/>
+        <meta name="og:description" content="Request a no-obligation call about your Shopify business goals. Let's put our heads together on how to enhance your Shopify store and offer an improved buying experience."/>
+      </Head>
       <div className="h-full bg-primary/30">
         <Circles />
         <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -72,7 +77,7 @@ const Contact = () => {
             className="flex-1 flex flex-col gap-4 lg:gap-6 w-full mx-auto z-20">
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input id="firstName" name="firstName" type="text" placeholder="name" autoComplete="given-name" className="input capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
+              <input id="firstName" name="firstName" type="text" placeholder="name" autoComplete="given-name" className="input capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(169,166,197)]" />
               <label htmlFor="firstName" className="hidden">Name</label>
               <ValidationError 
                 prefix="firstName" 
@@ -80,7 +85,7 @@ const Contact = () => {
                 errors={state.errors}
               />
               <label htmlFor="email" className="hidden">Email</label>
-              <input id="email" name="email" type="email" placeholder="email" autoComplete="email" className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(119,116,137)]" />
+              <input id="email" name="email" type="email" placeholder="email" autoComplete="email" className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(169,166,197)]" />
               <ValidationError 
                 prefix="Email" 
                 field="email"
@@ -90,7 +95,7 @@ const Contact = () => {
               <label htmlFor="subject" className="hidden">subject</label>
               <input id="subject" name="subject" type="text" placeholder="About" className="input" />
               <label htmlFor="message" className="hidden">message</label>
-              <textarea id="message" name="message" type="textarea" placeholder="How can I help?" className="textarea"></textarea>
+              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let's make some thing cool" className="textarea"></textarea>
               <button className="btn rounded-full border border-white/50 w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group mx-auto"

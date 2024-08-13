@@ -4,7 +4,7 @@ import Head from "next/head";
 // components
 
 import ParticlesContainer from "/components/ParticlesContainer";
-import ProjectsBtn from "/components/ProjectsBtn";
+import ContactBtn from "/components/ContactBtn";
 import Avatar from "/components/Avatar";
 
 // framer motion
@@ -18,15 +18,15 @@ const Home = () => {
   return (
   <>
   <Head>
-    <title>Nardu.info - Shopify Expert, Front-End Developer services</title>
-    <meta property="title" content="Shopify Expert, Front-End Developer services" />
+    <title>Nardu.info | Shopify Expert, Front-end developer services</title>
+    <meta property="title" content="Nardu.info | Shopify Expert, Front-end developer services" />
     <meta property="image" content="../public/Nardu Shopify developer avatar.jpg" key="image"/>
     <meta name="description" content="Let's enhance your Shopify store with expert front-end development.
-     I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
-    <meta property="og:title" content="Shopify Expert, Front-End Developer services" />
+     I create user experiences with CRO and performance in mind through Liquid customization and practical design."/>
+    <meta property="og:title" content="Nardu.info | Shopify Expert, Front-end developer services" />
     <meta property="og:image" content="../public/Nardu Shopify developer avatar.jpg" key="ogimage"/>
     <meta property="og:description" content="Let's enhance your Shopify store with expert front-end development.
-     I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
+     I create user experiences with CRO and performance in mind through Liquid customization and practical design."/>
     <meta property="url" content="https://nardu.info" />
     <meta property="og:url" content="https://nardu.info" />
     <meta property="og:type" content="website" />
@@ -67,7 +67,7 @@ const Home = () => {
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative z-20">
-            <ProjectsBtn />
+            <ContactBtn />
           </div>
           <motion.div 
             variants={fadeIn('down', 0.4)}
@@ -76,7 +76,7 @@ const Home = () => {
             exit='hidden'
             className="hidden xl:flex z-20"
           >
-            <ProjectsBtn />
+            <ContactBtn />
           </motion.div>
 
         </div>

@@ -17,9 +17,11 @@ const Work = () => {
   return (
     <>
     <Head>
-      <title>Nardu.info - Shopify developer portfolio of recent completed jobs</title>
-      <meta name="description" content="Expert Shopify developer specializing in front-end design and Liquid coding.\
-       Delivering high-converting, visually stunning online stores with meticulous attention to detail. PageFly partner."/>
+      <title>Shopify developer portfolio | Work examples and links</title>
+      <meta name="description" content="Shopify developer expert & PageFly partner. Specialist front-end design and Liquid code.
+      See work examples for previous merchants including custom page builds, custom data, and more."/>
+      <meta name="og:description" content="Shopify developer expert & PageFly partner. Specialist front-end design and Liquid code.
+      See work examples for previous merchants including custom page builds, custom data, and more."/>
     </Head>
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
@@ -42,7 +44,7 @@ const Work = () => {
               exit="hidden"
               className='mb-2 max-w-[400px] mx-auto'>
               < SlMagnifier className="inline"/>&nbsp;
-              Click slide for summary and link to project<br/>
+              Tap or hover slide for summary, contact me for links<br/>
             </motion.p>
           </div>
           <motion.div

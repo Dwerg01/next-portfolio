@@ -13,7 +13,7 @@ const workSlider = {
       { promo : "Bespoke developement to help you tell your brand story",
         image: 
         {
-          title: 'Purpose-fit Shopify sections from scratch',
+          title: 'Purpose-fit Shopify sections',
           sub: 'No two brands are the same and each one has a unique story to tell',
           path: '/work\ Eriu\ custom\ page.webp',
           alt: 'Fully custom Shopify sections from scratch'
@@ -62,7 +62,7 @@ const WorkSlider = () => {
       navigation={true}
       pagination={{clickable: true}}
       modules={[Navigation, Pagination]}
-      className='h-[420px] md:h-[520px]'
+      className='h-[320px] sm:h-[440px] md:h-[520px]'
     >
       {workSlider.slides.map((slide, index) => {
         return (

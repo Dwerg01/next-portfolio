@@ -93,9 +93,9 @@ const About = () => {
   return ( 
   <>  
     <Head>
-      <title>Nardu.info - Shopify Front-End Developer | Let&apos;s Grow Your Business</title>
-      <meta name="description" content="Experienced Shopify front-end developer with 3+ years beautifying e-commerce stores. Let's transform your Shopify store into a great buying experience.\
-       I specialize in creating, intuitive user experiences, and optimized performance."/>
+      <title>Shopify Specialist | PageFly Partner | Nardu.info</title>
+      <meta name="description" content="Experienced Shopify developer with 3+ years beautifying e-commerce stores. I help you with building and optimizing store performance to maximise conversions."/>
+      <meta name="og:description" content="Experienced Shopify developer with 3+ years beautifying e-commerce stores. I help you with building and optimizing store performance to maximise conversions"/>
     </Head>
     <div className="h-full
     bg-primary/30 py-28 md:py-32 text-center xl:text-left">

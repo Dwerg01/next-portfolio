@@ -3,6 +3,8 @@
 import TestimonialSlider from "../../components/TestimonialSlider";
 import Circles from "../../components/Circles";
 
+import Head from "next/head";
+
 // framer motion
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants'
@@ -10,6 +12,11 @@ import {fadeIn} from '../../variants'
 const Testimonials = () => {
   return (
   <>
+    <Head>
+      <title>Nardu.info | Shopify Developer | Testimonials</title>
+      <meta name="description" content="See what previous clients say. Stay up to date, with frequent updates and clear communication for the results you need for your Shopify store."/>
+      <meta name="og:description" content="See what previous clients say. Stay up to date, with frequent updates and clear communication for the results you need for your Shopify store."/>
+    </Head>
     <div className="h-full bg-primary/30 py-32 text-center">
       <Circles />
       <div className="container mx-auto h-full flex flex-col justify-center">

@@ -12,9 +12,9 @@ const Services = () => {
   return (
   <>
   <Head>
-    <title>Nardu.info - Shopify Developer services tailored for merchants</title>
-    <meta name="description" content="Let's enhance your Shopify store with expert front-end development.\
-     I create user experiences with CRO and performance in mind using Liquid customization and practical design."/>
+    <title>Nardu.info | Services Tailored for Shopify Stores</title>
+    <meta name="description" content="Let's enhance your Shopify store. Lean on my practical experience and benefit from app integration, store set-up, custom development & landing page builds. Your ideas, my pleasure!"/>
+    <meta name="og:description" content="Let's enhance your Shopify store. Lean on my practical experience and benefit from app integration, store set-up, custom development & landing page builds. Your ideas, my pleasure!"/>
   </Head>
   <div className='h-full bg-primary/30 py-36 flex items-center'>
     <Circles />
