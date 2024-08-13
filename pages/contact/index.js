@@ -19,7 +19,7 @@ const Contact = () => {
     return (
     <>
       <Head>
-        <title>Nardu.info | Shopify Developer | Let's Connect</title>
+        <title>Nardu.info | Shopify Developer | Let&apos;s Connect</title>
         <meta name="description" content="Request a no-obligation call about your Shopify business goals. Let's put our heads together on how to enhance your Shopify store and offer an improved buying experience."/>
         <meta name="og:description" content="Request a no-obligation call about your Shopify business goals. Let's put our heads together on how to enhance your Shopify store and offer an improved buying experience."/>
       </Head>
@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
           <div className="flex flex-col w-full max-w-[700px] gap-y-6 items-center">
-            <div>Thank you, I&apos;ll be in touch<span className="text-accent">!</span></div>
+            <div className="text-2xl">Thank you, I&apos;ll be in touch soon <span className="text-accent font-bold">!</span></div>
             <button 
               onClick={reset} 
               className="btn rounded-full border border-white/50 max-w-[170px]
@@ -49,9 +49,9 @@ const Contact = () => {
   <>
     <Head>
       <title>Nardu.info - Ready to boost your Shopify store? Let&apos;s Talk</title>
-      <meta name="description" content="Let&apos;s enhance your Shopify store with expert front-end development.\
+      <meta name="description" content="Let's enhance your Shopify store with expert front-end development.
       I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
-      <meta name="og:description" content="Let&apos;s enhance your Shopify store with expert front-end development.\
+      <meta name="og:description" content="Let's enhance your Shopify store with expert front-end development.
       I create user experiences with CRO and performance in mind using Liquid customization and practical design." />
     </Head>
     <div className="h-full bg-primary/30">
