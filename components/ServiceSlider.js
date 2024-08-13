@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 // import swiper styles
 import 'swiper/css';
-import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // icons
@@ -11,9 +11,8 @@ import {
   RxCrop,
   RxDesktop,
   RxLightningBolt,
-  RxReader,
   RxCode,
-  RxArrowTopRight,
+  RxEnvelopeClosed,
 } from "react-icons/rx";
 
 import {
@@ -21,28 +20,28 @@ import {
 } from "react-icons/si";
 
 // import required modules
-import { FreeMode, Pagination} from 'swiper';
+import { Navigation, Pagination} from 'swiper';
 
 export const serviceData = [
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Convey your unique message and selling points with custom developed pages or sections.',
+    description: 'Let me help you convey your unique message and selling points with custom developed pages or sections.',
   },
   {
     icon: <RxLightningBolt />,
     title: 'Optimization',
-    description: 'The speed of any website is crucial, and I optimize websites, images and media for optimal performance.',
+    description: 'The speed of your website is crucial. I optimize websites, images and media for the best possible performance.',
   },
   {
     icon: <RxCrop />,
     title: 'Customization',
-    description: 'Enrich product detail with technical specs, designer details, ingredients or creative application ideas.',
+    description: 'Enrich product detail and highlight the most important information. Show customers your products in your own way.',
   },
   {
     icon: <SiBrandfolder />,
     title: 'Branding',
-    description: 'Consistent branding and messaging makes a website look legitimate. I ensure this consistency in development.',
+    description: 'Branding and messaging is what makes a website look legit or trustworthy. I ensure brand consistency in development.',
   },
   {
     icon: <RxCode />,
@@ -64,12 +63,10 @@ const ServiceSlider = () => {
           spaceBetween: 15,
         },
       }}
-      freeMode={true}
-      pagination={{
-        clickable: true
-      }}
-      modules={[FreeMode, Pagination]}
-      className='h-[240px sm:h-[340px]'
+      navigation={true}
+      pagination={{clickable: true}}
+      modules={[Navigation, Pagination]}
+      className='h-[240px sm:h-[380px]'
     >
       {serviceData.map((item, index) => {
         return (
@@ -85,9 +82,9 @@ const ServiceSlider = () => {
                 <p className='max-w-[350px] leading-normal'>{item.description}</p>
               </div>
               {/* arrow */}
-              <div className='text-3xl'>
-                <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>
-              </div>
+              <a href="/contact" className='text-3xl'>
+                <RxEnvelopeClosed className='rotate-0 group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>
+              </a>
             </div>
           </SwiperSlide>
         );
