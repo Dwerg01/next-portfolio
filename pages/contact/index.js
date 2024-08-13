@@ -85,7 +85,7 @@ const Contact = () => {
                 errors={state.errors}
               />
               <label htmlFor="email" className="hidden">Email</label>
-              <input id="email" name="email" type="email" placeholder="email" autoComplete="email" className="input autofill:shadow-[inset_0_0_0px_1000px_rgb(169,166,197)]" />
+              <input id="email" name="email" type="email" placeholder="email" autoComplete="email" className="input placeholder:capitalize autofill:shadow-[inset_0_0_0px_1000px_rgb(169,166,197)]" />
               <ValidationError 
                 prefix="Email" 
                 field="email"
@@ -95,7 +95,7 @@ const Contact = () => {
               <label htmlFor="subject" className="hidden">subject</label>
               <input id="subject" name="subject" type="text" placeholder="About" className="input" />
               <label htmlFor="message" className="hidden">message</label>
-              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let's make some thing cool" className="textarea"></textarea>
+              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let's make something cool" className="textarea"></textarea>
               <button className="btn rounded-full border border-white/50 w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group mx-auto"

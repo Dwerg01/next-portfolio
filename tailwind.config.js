@@ -36,8 +36,8 @@ module.exports = {
         'spin-slow': 'spin 10s linear infinite',
       },
       fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
+        poppins: [`Poppins`, 'sans-serif'],
+        sora: [`Sora`, 'sans-serif'],
       },
     },
   },
