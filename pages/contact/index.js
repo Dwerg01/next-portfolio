@@ -60,15 +60,15 @@ const Contact = () => {
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
-          <motion.h2 
+          <motion.h1 
             className="h2 text-center mb-4 xl:mb-8"
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            >
-            <span className="text-accent">Contact </span> me .
-          </motion.h2>
+            >Get in
+            <span className="text-accent"> Touch </span> .
+          </motion.h1>
           {/* form */}
           <motion.form
             onSubmit={handleSubmit}
@@ -97,7 +97,7 @@ const Contact = () => {
               <label htmlFor="subject" className="hidden">subject</label>
               <input id="subject" name="subject" type="text" placeholder="About" className="input" />
               <label htmlFor="message" className="hidden">message</label>
-              <textarea id="message" name="message" type="textarea" placeholder="Tell me about your project & Let&apos;s make something cool" className="textarea"></textarea>
+              <textarea id="message" name="message" type="textarea" placeholder="Together we can make something great, what are your goals?" className="textarea"></textarea>
               <button className="btn rounded-full border border-white/50 w-[170px]
                 px-8 transition-all duration-300 flex items-center justify-center
                 overflow-hidden hover:border-accent group mx-auto"

@@ -29,14 +29,14 @@ const Work = () => {
         <div className='flex flex-col gap-x-8 mt-20 sm:mt-12'>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col xl:text-left xl:mb-0'>
-            <motion.h2 
+            <motion.h1 
               variants={fadeIn('up', 0.2)} 
               initial="hidden"
               animate="show"
               exit="hidden"
               className='h2 text-3xl md:text-5xl mx-auto'>
-              Work Projects <span className='text-accent'>.</span>
-            </motion.h2>
+              Work <span className='text-accent'>Examples </span> .
+            </motion.h1>
             <motion.p 
               variants={fadeIn('up', 0.4)} 
               initial="hidden"

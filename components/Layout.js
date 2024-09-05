@@ -13,7 +13,7 @@ const Layout = ({children}) => {
   return ( 
   <>
     <Head>
-      <link rel="icon" href="../favicon.ico" sizes="any" />
+      <link rel="icon" href="../favicon.svg" sizes="any" />
     </Head>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXC3S4B6"
     className="h-0 w-0 hidden"></iframe></noscript>

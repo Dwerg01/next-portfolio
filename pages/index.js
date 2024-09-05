@@ -30,6 +30,7 @@ const Home = () => {
     <meta property="url" content="https://nardu.info" />
     <meta property="og:url" content="https://nardu.info" />
     <meta property="og:type" content="website" />
+    <link rel="alternate" hreflang="en-US" href="https://nardu.info" />
   </Head>
     <div className="bg-primary/60 h-full">
       {/* text */}
