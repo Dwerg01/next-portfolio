@@ -15,18 +15,18 @@ import { SiUpwork } from "react-icons/si"
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={'https://www.linkedin.com/in/nardu-malherbe-6016b615'} target="_blank" className="hover:text-accent translation-all duration-300">
+      <a href="https://www.linkedin.com/in/nardu-malherbe-6016b615" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300">
         <RiLinkedinFill />
-      </Link>
-      <Link href={'https://www.facebook.com/Dwerg'} target="_blank" className="hover:text-accent translation-all duration-300">
+      </a>
+      <a href="https://www.facebook.com/Dwerg" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300">
         <RiFacebookFill />
-      </Link>
-      <Link href={'https://twitter.com/NarduInfo'} target="_blank" className="hover:text-accent translation-all duration-300">
+      </a>
+      <a href="https://twitter.com/NarduInfo" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300">
         <RiTwitterXFill />
-      </Link>
-      <Link href={'https://www.upwork.com/freelancers/~01c23fdd04f98a12ed'} target="_blank" className="hover:text-accent translation-all duration-300">
+      </a>
+      <a href="https://www.upwork.com/freelancers/~01c23fdd04f98a12ed" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-all duration-300">
         <SiUpwork />
-      </Link>
+      </a>
     </div>
   )
 };

@@ -3,16 +3,16 @@ import Image from "next/image";
 import Head from "next/head";
 // components
 
-import ParticlesContainer from "/components/ParticlesContainer";
-import ContactBtn from "/components/ContactBtn";
-import Avatar from "/components/Avatar";
+import ParticlesContainer from "../components/ParticlesContainer";
+import ContactBtn from "../components/ContactBtn";
+import Avatar from "../components/Avatar";
 
 // framer motion
 
 import {motion} from 'framer-motion'
 
 //variants
-import {fadeIn} from '/variants'
+import {fadeIn} from '../variants'
 
 const Home = () => {
   return (
